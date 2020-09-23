@@ -1,3 +1,7 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 h1 {
     color: red;
 }
@@ -25,31 +29,38 @@ article li.actual {
 
 /*seccionar elementos...*/
 
-aside {
-    float: left;
-    width: 30%;
-    clear: both;
-    border: 1px solid black;
-    margin: 2px;
+section {
+    width: 100%;
+    display: inline-block;
 }
 
-section {
+section h2 {
+    text-align: center;
+    color: firebrick;
+}
+
+#datos {
     float: left;
-    width: 65%;
+    width: 30%;
+    border: solid black;
+    margin: 2px;
+    padding: 5px;
 }
 
 #formacion {
     float: left;
-    width: 50%;
-    border: 1px solid black;
+    width: 30%;
+    border: solid black;
     margin: 2px;
+    padding: 5px;
 }
 
 #experiencia {
-    float: right;
-    width: 50%;
-    border: 1px solid black;
+    float: left;
+    width: 30%;
+    border: solid black;
     margin: 2px;
+    padding: 5px;
 }
 
 
@@ -70,7 +81,6 @@ nav ul li {
 }
 
 nav ul li a {
-    font-family: Arial;
     font-size: 17px;
     text-decoration: none;
     float: left;
@@ -89,13 +99,12 @@ nav ul li a:hover {
     body {
         font-family: Arial, Helvetica, sans-serif;
     }
-    aside {
-        float: left;
-        width: 100%;
-        clear: both;
-    }
     section {
         float: left;
+        width: 95%;
+        padding: 10px;
+    }
+    #datos {
         width: 100%;
     }
     #formacion {
@@ -116,11 +125,10 @@ nav ul li a:hover {
     nav {
         width: 100%;
     }
-    aside {
-        float: top;
-        width: 100%;
-    }
     section {
+        width: 95%;
+    }
+    #datos {
         width: 100%;
     }
     #formacion {
