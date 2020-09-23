@@ -1,0 +1,142 @@
+h1 {
+    color: red;
+}
+
+footer {
+    clear: both;
+}
+
+article li {
+    color: #00f;
+}
+
+article li strong {
+    color: #000;
+}
+
+
+/*se utiliza un class en li para poner oscura la letra*/
+
+article li.actual {
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+
+/*seccionar elementos...*/
+
+aside {
+    float: left;
+    width: 30%;
+    clear: both;
+    border: 1px solid black;
+    margin: 2px;
+}
+
+section {
+    float: left;
+    width: 65%;
+}
+
+#formacion {
+    float: left;
+    width: 50%;
+    border: 1px solid black;
+    margin: 2px;
+}
+
+#experiencia {
+    float: right;
+    width: 50%;
+    border: 1px solid black;
+    margin: 2px;
+}
+
+
+/*..en horizontal*/
+
+nav.menu {
+    height: 45px;
+    width: 100%;
+    background-color: #2175bc;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    font-family: Arial;
+    font-size: 17px;
+    text-decoration: none;
+    float: left;
+    padding: 10px;
+    background-color: #2175bc;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    background-color: #2586d7;
+    margin-top: -2;
+    padding-bottom: 12px;
+}
+
+@media (min-width: 601px) and (max-width: 1000px) {
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    aside {
+        float: left;
+        width: 100%;
+        clear: both;
+    }
+    section {
+        float: left;
+        width: 100%;
+    }
+    #formacion {
+        width: 100%;
+    }
+    #experiencia {
+        width: 100%;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    nav {
+        width: 100%;
+    }
+    aside {
+        float: top;
+        width: 100%;
+    }
+    section {
+        width: 100%;
+    }
+    #formacion {
+        width: 100%;
+    }
+    #experiencia {
+        width: 100%;
+    }
+    nav ul li a {
+        font-size: 14px;
+    }
+}
+
+
+/*se utiliza para resaltar el primer elemento de la lista de un class que contiene ul y li
+#formacion ul li:first-child {
+    font-weight: bolder;
+    font-size: 1.2em;
+}*/
